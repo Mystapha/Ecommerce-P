@@ -1,0 +1,54 @@
+.body2{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "jost",sans-serif;
+    background:linear-gradient(to bottom,#0f0c29,#302b63,#24243e) ;
+}
+
+.wrapper{
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url("https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    display: grid;
+    place-items: center;
+}
+.form-signin-heading{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    justify-content: center;
+    color:#fff;
+}
+.form-control{
+    margin-top: 50px;
+    width: 250px;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+.form-control:hover{
+    transform: scale(1.02);
+}
+.checkbox{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 20px;
+    background-color:#873d3d;
+    border: none;
+    font-size: 15px;
+}
+.btn:hover{
+    font-size: 20px;
+    background-color: #302b63;
+}
+h5{
+    margin-top: 8px;
+    color: #fff;
+}

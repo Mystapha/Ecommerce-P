@@ -1,0 +1,112 @@
+body {
+  background: #eee !important;
+}
+
+
+.header{
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  width: 30rem;
+  border-radius: 20px !important;
+  height: 350px;
+  box-shadow: 10px 14px 8px -1px rgba(201,176,176,0.56);
+  -webkit-box-shadow: 10px 14px 8px -1px rgba(201,176,176,0.56);
+  -moz-box-shadow: 10px 14px 8px -1px rgba(201,176,176,0.56);
+}
+.produit{
+  display:grid;
+  place-items:center;
+  border:2px solid black;
+  margin:250px;
+  padding:20px;
+  background: url("https://thumbs.dreamstime.com/b/fashion-store-men-clothing-store-interior-clothes-shop-mannequin-modern-57351643.jpg") no-repeat center / cover;
+}
+.promo{
+  background-color: #db41319e;
+  color:white;
+  padding:10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rosybrown;
+  font-weight: 600;
+  font-size: 25px;
+}
+.zoom{
+  --x: 50%;
+  --y: 50%;
+  /**/
+  transform: scale(var(--zoom));
+  transform-origin: var(--x) var(--y);
+  clip-path: inset(
+    calc((1 - 1/var(--zoom)) * (var(--y)))
+    calc((1 - 1/var(--zoom)) * (100% - var(--x)))
+    calc((1 - 1/var(--zoom)) * (100% - var(--y)))
+    calc((1 - 1/var(--zoom)) * (var(--x)))
+  );
+  width: 200px;
+  cursor: crosshair;
+}
+.zoom:hover{
+  --zoom:2;
+}
+.contact{
+  width: 100%;
+  height: 100%;
+  display:grid;
+ grid-template-columns: 1fr 1fr;
+ place-items: center;
+ margin:10px;
+ background: url("https://img.freepik.com/free-photo/black-friday-composition-with-shopping-bags-space-left_23-2147696813.jpg?w=740&t=st=1721498331~exp=1721498931~hmac=2437f22e7169041958646bda7578d27d6941e7b55292d98a24890e362013beca") no-repeat center / cover;
+}
+@media screen and (max-width:700px) {
+  .contact{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
+
+.selectcatego{
+  width: 84px;
+  margin-left: -29px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.selectcatego option{
+  color: black;
+}
+
+
+
+.usermodal{
+  display: grid;
+  place-items: center;
+    width: 250px;
+    height: 200px;
+    background:linear-gradient(rgb(139, 129, 129),rgb(137, 137, 230),rgb(212, 212, 89));
+    color: black;
+    position: absolute;
+    top: 417px;
+    left: 469px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+}
+.btn6{
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 120px;
+  width: 50px;
+  border: none;
+  background-color:transparent;
+  height: 30px;
+  font-size: 15px;
+ font-weight: 600;
+}
